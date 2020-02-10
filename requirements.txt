@@ -1,0 +1,5 @@
+flask_ask_sdk==0.1.1
+ask_sdk_core==1.9.0
+Flask==1.0.3
+python-dotenv==0.10.5
+gunicorn==19.9.0
