@@ -1,6 +1,6 @@
 # ASK SDK Starter Template
 
-[![Build Status](https://travis-ci.org/JACTheCreator/ask-sdk-starter-template.svg?branch=master)](https://travis-ci.org/JACTheCreator/ask-sdk-starter-template)
+[![Build Status](https://travis-ci.org/JACTheCreator/ask-sdk-starter-custom-skill-template-python.svg?branch=master)](https://travis-ci.org/JACTheCreator/ask-sdk-starter-custom-skill-template-python)
 [![GitHub license](https://img.shields.io/github/license/JACTheCreator/ask-sdk-starter-custom-skill-template-python.svg)](https://github.com/JACTheCreator/ask-sdk-starter-custom-skill-template-python/blob/master/LICENSE)
 
 ## How to use the template
