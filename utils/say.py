@@ -1,3 +1,5 @@
+from constants.intents import (FIRST_ORDER_INTENT, SECOND_ORDER_INTENT,
+                               THIRD_ORDER_INTENT)
 
 class say(object):
 
@@ -7,6 +9,24 @@ class say(object):
             Welcome.
         """
     
+    @staticmethod
+    def firstorder():
+        return """
+            First intent called.
+        """
+
+    @staticmethod
+    def secondorder():
+        return """
+            Second intent called.
+        """
+
+    @staticmethod
+    def thirdorder():
+        return """
+            Third intent called.
+        """
+
     @staticmethod
     def didnothear():
         return """
@@ -35,10 +55,17 @@ class say(object):
     def next_intent_error_handle(intent, handler_input):
         invalid_speech = 'Silly! That is not right! I was expecting you to tell me'
 		
-        # if set(intent) == set([GET_GUESS_MY_NUMBER_INTENT, GET_GUESS_ALEXA_NUMBER_INTENT]):
-        #     return invalid_speech + """
-        #     the game mode. Just say guess your number 
-        #     if you want to guess my number, or, say guess my secret number 
-        #     if you want me to guess your secret number.
-        #     """
+        if set(intent) == set([FIRST_ORDER_INTENT]):
+            return invalid_speech + """
+            One or Uno. The First intent should be called here.
+            """
+        elif set(intent) == set([SECOND_ORDER_INTENT]):
+            return invalid_speech + """
+            Two or dos. The Second intent should be called here.
+            """
+        elif set(intent) == set([THIRD_ORDER_INTENT]):
+            return invalid_speech + """
+            Three or tres. The Third intent should be called here.
+            """
+        
         return invalid_speech
