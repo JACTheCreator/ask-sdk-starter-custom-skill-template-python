@@ -1,5 +1,11 @@
 LAUNCH_REQUEST = 'LaunchRequest'
 
+FIRST_ORDER_INTENT = 'FirstOrderIntent'
+
+SECOND_ORDER_INTENT = 'SecondOrderIntent'
+
+THIRD_ORDER_INTENT = 'ThirdOrderIntent'
+
 AMAZON_YES_INTENT = 'AMAZON.YesIntent'
 
 AMAZON_NO_INTENT = 'AMAZON.NoIntent'
