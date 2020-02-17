@@ -16,7 +16,7 @@ coming soon!
 
 ## Built With
 
-* [Alexa Skills Kit SDK for Python](https://github.com/alexa/alexa-skills-kit-sdk-for-python)
+- [Alexa Skills Kit SDK for Python](https://github.com/alexa/alexa-skills-kit-sdk-for-python)
 
 ## Contributing
 
@@ -24,7 +24,7 @@ Please read [CONTRIBUTING.md](https://github.com/JACTheCreator/ask-sdk-starter-c
 
 ## Authors
 
-* **Jermaine Coates** - [JACTheCreator](https://github.com/JACTheCreator)
+- **Jermaine Coates** - [JACTheCreator](https://github.com/JACTheCreator)
 
 ## License
 
