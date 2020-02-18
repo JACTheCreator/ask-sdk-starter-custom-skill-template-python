@@ -10,6 +10,10 @@ from intents.cancel_or_stop_intent_handler import CancelOrStopIntentHandler
 from intents.session_ended_request_handler import SessionEndedRequestHandler
 from intents.catch_all_exception_handler import CatchAllExceptionHandler
 
+from intents.first_order_intent_handler import FirstOrderIntentHandler
+from intents.second_order_intent_handler import SecondOrderIntentHandler
+from intents.third_order_intent_handler import ThirdOrderIntentHandler
+
 load_dotenv()
 
 sb = SkillBuilder()
@@ -19,8 +23,11 @@ sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_request_handler(HelpIntentHandler())
 
-sb.add_exception_handler(CatchAllExceptionHandler())
+sb.add_request_handler(FirstOrderIntentHandler())
+sb.add_request_handler(SecondOrderIntentHandler())
+sb.add_request_handler(ThirdOrderIntentHandler())
 
+sb.add_exception_handler(CatchAllExceptionHandler())
 
 app = Flask(__name__)
 skill_response = SkillAdapter(skill = sb.create(), 
