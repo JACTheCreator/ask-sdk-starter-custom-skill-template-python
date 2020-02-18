@@ -9,7 +9,7 @@ from utils.common import (set_next_intent, is_next_intent_error,
                           handle_next_intent_error, set_prev_msg,
                           get_prev_msg)
 
-class FirstOrderIntentHandler(AbstractRequestHandler):
+class SecondOrderIntentHandler(AbstractRequestHandler):
     """Handler for Help Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
