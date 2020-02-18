@@ -6,6 +6,9 @@
 ## How to use the template
 
 coming soon!
+```bash
+python app.py
+```
 
 ## Features
 
